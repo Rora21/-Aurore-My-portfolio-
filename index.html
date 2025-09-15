@@ -6,44 +6,44 @@
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-400">
+<body class="">
   <header>
     <!-- navbar-->
-    <nav class="flex justify-between items-center shadow-md bg-white">
-      <span><img src="/photos/aurore.jpg" class="w-8 h-8 " alt="logo"></span>
+    <nav class="flex justify-between items-center shadow-lg bg-white mb-1">
+      <span><img src="/photos/aurore.jpg" class="w-8 h-8  rounded-1/2" alt="logo"></span>
       <ul class="flex space-x-4 m-4">
         <li>home</li>
-        <li>about</li>
+        <li>about</li> 
         <li>contact</li>
       </ul>
     </nav>
   </header>
   <!--carousal section-->
-  <section id="carousal" class="flex items-center bg-gray-300 px-24 py-16">
+  <section  class="flex items-center bg-gray-400 justify-between  px-24 py-16">
     <!-- text-->
-    <div class="w-1/2 pr-10">
-      <h1 class="text-2*1 font-bold text-gray-800 mb-6">Hello I'm Ineza Aurore</h1> 
-      <p class="mt-4 text-lg tex-gray-600">A passionate beginner Fronted Learnig Step by Step Developer</p>
+    <div class="">
+      <h1 class="text-lg font-bold text-gray-800 font-bold talic">Hello I'm Ineza Aurore</h1> 
+      <p class="mt-4 text-lg tex-gray-600 ">Hi, I’m Ineza Aurore  welcome to my portfolio! I’m a passionate learner with a background in Business and IT, now exploring the world of web development and design. I enjoy solving problems, learning new technologies, and creating meaningful projects. This space is where I share my journey, skills, and the things I’m building along the way.</p>
     </div>
-    <div>
-      <img src="photos/ineza.jpg" alt="Aurore" class= "rounded-full" />
+    <div class="shrink-0 ml-12">
+      <img src="photos/ineza.jpg" alt="Aurore" class= "w-60 h-60 rounded-full" />
     </div>
   </section>
   <!--About section-->
-  <section id="about" class="bg-white px-24 py-8">
-    <div class="max-w-2*1 text-center">
-      <h2 class="text-2*1 font-bold text-gray-800 mb-6">About me</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
+  <section id="about" class="bg-white">
+    <div class="p-8 m-12 mt-4  bg-gray-900 ">
+      <h2 class="font-bold text-gray-100 mb-6 arounded">About me</h2>
+      <p class="text-gray-200 mb-4 ">
         I'm Ineza Aurore, a passionate beginner Fronted Development student with a big dream of creating a
         beautiful,functinal and user-friendly website. Every day, I enjoy learning code bring ideas to life, and how
         design can connect people to technology in meaningful ways.
       </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
+      <p class="text-gray-200 mb-4">
         My jorney in Web Development started with curiosity and I quickly grew into something i deep enjoy.
         step by step, i'm buiding skills in HTML, CSS, and Tailwind Css to create modern, responsive design. I believe
         that learning is continous adventure, and i'm excited to keep growing in this field.
       </p>
-      <p class="text-gray-600 leading-relaxed mb-4">
+      <p class="text-gray-200 mt-4">
         Beyond coding, i love reading romantic novels, crocheting and spending quality time with loved ones. These
         hobbies inspire my creativity and help me balance my technical jouney with things that bring me joy. My goal is
         to become a creative developer, who can design a websites that people enjoy using.
@@ -51,15 +51,26 @@
     </div>
   </section>
   <!-- contact section-->
-  <section id="contact" class="bg-gray-300 px-24 py-8">
-    <div class="max-w-2*1 text-center">
-      <h2 class="text-2*1 font-bold text-gray-800 mb-6">Contact me</h2>
-      <p class="text-gray-600 leading-relaxed mb-4">
-        you can always reach out to me by email:
-        <a>aurore.nezah@gmail.com</a> 
-        
-      </p>
-  </section>
+   <section>
+    <div id="contact" class="p-8 m-12 mt-4 bg-gray-900">
+      <h2 class="font-bold text-gray-100 mb-6 arounded">Contact me</h2>
+      <form action="#" method="post" class="space-y-4">
+        <div>
+          <label for="name" class="block text-gray-200 mb-2">Name:</label>
+          <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="email" class="block text-gray-200 mb-2">Email:</label>
+          <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div>
+          <label for="message" class="block text-gray-200 mb-2">Message:</label>
+          <textarea id="message" name="message" rows="4" class="w-full p-2 border border-gray-300 rounded" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
+      </form>
+    </div>
+   </section>
 </body>
 </body>
 </html>
